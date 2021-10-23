@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>loops</title>
+	<script type="text/javascript">
+		// For loop
+		var students = new Array("John", "Ann", "Aaron", "Edwin", "Elizabeth");
+		document.write("<b>Using for loops<b><br /><p>");
+		for (i = 0; i < students.length; i++) {
+			document.write("<em>" +students[i] + "</em><br />");
+		}
+
+		//while loop
+		document.write("Using while loops <br />");
+		var i = 0, j = 1, k;
+		document.write("Fibonacci series less than 40<br />");
+		while (i < 40) {
+			document.write(i + "<br />");
+			k =  i + j;
+			i = j;
+			j = k;
+		}
+	</script>
+</head>
+<body>
+
+</body>
+</html>

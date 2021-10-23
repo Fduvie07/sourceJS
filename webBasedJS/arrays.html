@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Arrays</title>
+	<script type="text/javascript">
+		//Initializing an array
+		/*
+		var students = ["John", "Ann", "Kelvin"];
+
+		// Adding an element to the array
+		students[3] = "Emma";
+		students[4] = "Rose";
+		*/
+
+		//Initializiing an array - Second method
+		/*
+		var students = new Array();
+		students[0] = "John";
+		students[1] = "Ann";
+		students[2] = "Kevin";
+
+		document.write("The list of students are: " + students);
+
+		alert("The list of students include: "+ students);*/
+
+		/*
+		JavaScript Array Methods
+		arrayname.property --> gives the value of a the array property
+		arrayname.method() --> gives the output of a method
+		
+		lenght.property --> gives the number of elements in an array
+		prototype.property --> adds new properties and methods
+		reverse method --> reverses the order of items in an array
+		sort method --> sorts elements in an array
+		pop method --> removes the last item in an array
+		shift method --> removes the first item in an array
+		push method --> adds a value as the last item of the array
+		*/
+		var students = new Array("John", "Ann", "Aaron", "Edwin", "Elizabeth");
+		Array.prototype.displayItems = function() {
+			// body...
+			for (var i = 0; i < this.length; i++) {
+				document.write(this[i] + "<br />");
+			}
+		}
+		document.write("<h2>students array</h2><br />");
+		students.displayItems();
+		document.write("<br /> <h3>The number of items in students arrray is </h3>" + students.length + "<br />");
+		document.write("<br /> <h3>The Sorted students array</h3><br />");
+		students.sort();
+		students.displayItems();
+		document.write("<br /> <h3>The Reversed students array</h3><br/>");
+		students.reverse();
+		students.displayItems();
+		document.write("<br /> <h3>The students array after Removing the last item</h3><br />");
+		students.pop();
+		students.displayItems();
+		document.write("<br /> <h3>The students array after Push</h3><br />");
+		students.push("My stuff");
+		students.displayItems();
+	</script>
+</head>
+<body>
+
+</body>
+</html>
